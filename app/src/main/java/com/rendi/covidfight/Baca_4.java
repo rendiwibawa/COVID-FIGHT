@@ -9,6 +9,6 @@ public class Baca_4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_baca_4);
+        setContentView(R.layout.activity_baca_5);
     }
 }
