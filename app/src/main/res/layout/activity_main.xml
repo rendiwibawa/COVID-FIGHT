@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#2C2B2B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+//card and Header
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="19dp"
+            android:background="@drawable/header">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayo Lawan"
+                    android:textSize="30dp"
+                    android:paddingLeft="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Corona"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#463427"
+                    />
+                <Button
+                    android:id="@+id/profil"
+                    android:gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ic_account_circle_black_24dp"
+                    android:layout_width="35dp"
+                    android:backgroundTint="#FFFFFC"
+                    android:layout_height="35dp">
+                </Button>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:text="Ayo kita bisa lawan corona demi keluarga dan orang yang kita cintai dengan melakukan beberapa hal berikut ini"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+            //CARD
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-90dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/splash"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="145dp"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/jagadiri" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ayo Jaga Diri Sendiri"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="3"
+                        android:text="@string/lindungi_diri_sendiri"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_baca1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn"
+                        android:backgroundTint="#545454"
+                        android:text="Baca yuks"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/btn_share_1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_share_black_24dp"
+                        android:backgroundTint="#545454"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp">
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-90dp"
+                android:background="@drawable/splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/masker"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:text="@string/biasakan_pakai_masker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/pentingnya_masker"
+                        android:maxLines="3"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_baca2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/btn"
+                            android:backgroundTint="#545454"
+                            android:text="Baca yuks"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+                        <Button
+                            android:id="@+id/btn_share_2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ic_share_black_24dp"
+                            android:backgroundTint="#545454"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+//CARD
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp">
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-90dp"
+                android:background="@drawable/splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/cucitangan"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:text="Biasakan Mencuci Tangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/pentingnya_cucitangan"
+                        android:maxLines="3"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_baca3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/btn"
+                            android:backgroundTint="#545454"
+                            android:text="Baca yuks"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+                        <Button
+                            android:id="@+id/btn_share_3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ic_share_black_24dp"
+                            android:backgroundTint="#545454"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+//CARD
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp">
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-90dp"
+                android:background="@drawable/splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/carasy"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:text="Tips Sehat Yang Saya Lakukan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/lindungi_diri_sendiri"
+                        android:maxLines="3"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/btn_baca4"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn"
+                        android:backgroundTint="#545454"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:text="Baca yuks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
